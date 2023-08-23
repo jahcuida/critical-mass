@@ -1,8 +1,8 @@
-import { useState } from "react";
+
 import massLogo from "./assets/logo-masa-critica-preview.png";
 import "./styles/App.css";
 import BodyPage from "./BodyPage";
-import Footer from "./footer";
+import Footer from "./Footer";
 import Slider from "./Slider";
 
 function App() {
