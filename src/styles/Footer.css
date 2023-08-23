@@ -1,0 +1,27 @@
+.footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  /* bottom: 0; */
+}
+a {
+  color:black;
+  text-decoration: none;
+  cursor: pointer;
+}
+#footer-content {
+  width: 100%;
+  place-content: center;
+  justify-content: center;
+  border-radius: 4rem;
+}
+
+.footer-social ul li{
+  display: inline;
+  margin-right: 1rem;
+}
+
+.footer-mail div{
+  margin-top:2rem;
+}

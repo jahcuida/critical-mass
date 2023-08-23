@@ -1,7 +1,9 @@
 import { useState } from "react";
 import massLogo from "./assets/logo-masa-critica-preview.png";
-import "./App.css";
+import "./styles/App.css";
 import BodyPage from "./BodyPage";
+import Footer from "./footer";
+import Slider from "./Slider";
 
 function App() {
   return (
@@ -12,7 +14,15 @@ function App() {
           <h1>Masa crítica Granada</h1>
         </div>
       </header>
+      <div className="grey">
+      </div>
+      <Slider></Slider>
+      <div className="grey">
+      </div>
       <BodyPage/>
+      <div className="grey">
+      </div>
+      <Footer/>
     </>
   );
 }

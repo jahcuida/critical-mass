@@ -1,0 +1,20 @@
+.list {
+  float: left;
+  margin-left: 4rem;
+  padding-right: 2rem;
+}
+.list-content {
+  background-color: whitesmoke;
+  float: right;
+  width: 50%;
+ 
+  border-radius: 2rem;
+  padding-right: 2rem;
+  margin-right: 13rem;
+  margin-top: 1rem;
+}
+.main {
+  height: 14.4rem;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,143 @@
+/* .content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slide{
+    max-width: 100%;
+    height: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  .slide.active{
+    opacity: 1;
+  }
+  .carro {
+    width: 50rem;
+    height: 25rem;
+    object-fit: cover;
+    object-position: center; */
+/* opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; */
+/* }
+  
+  .carousel img.active {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  .indicators {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+  }
+  
+  .indicator {
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .indicator.active {
+    background-color: #333;
+  } */
+ul,
+.list-images {
+  list-style: none;
+  white-space: nowrap;
+}
+
+.list-images {
+  display: inline;
+  place-items: center;
+}
+
+.list-images img {
+  margin-top: -16px;
+  width: 900px;
+  height: 500px;
+  
+}
+
+/* Main container */
+
+.main-container {
+  width: 900px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 2.2rem;
+}
+
+/* Slider container */
+.slider-container {
+  position: relative;
+  height: 100%;
+
+}
+
+/* dots carrusel */
+.dots-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot-container-item {
+  margin: 8px 3px;
+  cursor: pointer;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* Arrows */
+.leftArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 32px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.rightArrow {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: 32px;
+  font-size: 50px;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.container-images {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+}
+
+div.active {
+  background: #ccc;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+}
