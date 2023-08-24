@@ -1,40 +1,47 @@
-import massLogo from "./assets/logo-masa-critica-preview.png";
-import "./styles/Footer.css";
+import massLogo from "./assets/logo.png";
+import "./styles/Header.css";
 import { AiFillInstagram } from "react-icons/ai";
 import { BiLogoFacebookCircle } from "react-icons/bi";
 import { AiTwotoneMail } from "react-icons/ai";
 
-export default function Footer() {
+export default function Header() {
   return (
     <>
-      <div className="footer">
-        <div id="footer-logo">
+      <header>
+        <div id="header-logo">
           <img src={massLogo} className="logo" alt="Critical mass logo" />
         </div>
-        <div className="footer-mail">
+        <div>
           <div>
-            <AiTwotoneMail />
+            <h1>MASA CRÍTICA GRANADA</h1>
           </div>
-          <a href="mailto:mglprzprz@gmail.com">mglprzprz@gmail.com</a>
         </div>
-        <div className="social">
+        <div className="header-social">
           <ul>
             <li>
               <a href="#">
-                <AiFillInstagram />
+                <i>
+                  <AiFillInstagram />
+                </i>
               </a>
             </li>
             <li>
               <a href="#">
-                <BiLogoFacebookCircle />
+                <i>
+                  <BiLogoFacebookCircle />
+                </i>
               </a>
             </li>
             <li>
-              <a></a>
+              <a>
+                <i>
+                  <AiTwotoneMail />
+                </i>
+              </a>
             </li>
           </ul>
         </div>
-      </div>
+      </header>
     </>
   );
 }

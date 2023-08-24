@@ -1,0 +1,46 @@
+header {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+    /* bottom: 0; */
+  }
+  a {
+    color:black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  i{
+    font-size: 2.5rem;
+  }
+  h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+    margin-top: 2.5rem;
+    
+  }
+  .header-social ul li{
+    display: inline;
+    margin-right: 1rem;
+  }
+  .header-social{
+    margin-top: 0.5rem;
+  }
+  .header-mail div{
+    margin-top:2rem;
+  }
+  .logo {
+    height: 6em;
+    padding: 1.5em;
+    will-change: filter;
+    transition: filter 300ms;
+    margin-left: 4rem;
+    
+  } 
+
+  /* #header-logo{
+    padding-bottom:6rem ;
+    width: 19em;
+    height: 5rem;
+  } */
