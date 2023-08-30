@@ -1,58 +1,3 @@
-/* .content{
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-  .carousel {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  .slide{
-    max-width: 100%;
-    height: auto;
-    opacity: 0;
-    transition: opacity 0.5s ease-in-out;
-  }
-  .slide.active{
-    opacity: 1;
-  }
-  .carro {
-    width: 50rem;
-    height: 25rem;
-    object-fit: cover;
-    object-position: center; */
-/* opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out; */
-/* }
-  
-  .carousel img.active {
-    opacity: 1;
-    visibility: visible;
-  }
-  
-  .indicators {
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
-  }
-  
-  .indicator {
-    width: 10px;
-    height: 10px;
-    background-color: #ccc;
-    border-radius: 50%;
-    margin: 0 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  .indicator.active {
-    background-color: #333;
-  } */
 ul,
 .list-images {
   list-style: none;
@@ -71,7 +16,6 @@ ul,
   
 }
 
-/* Main container */
 
 .main-container {
   width: 900px;
@@ -80,14 +24,13 @@ ul,
   margin-bottom: 2.2rem;
 }
 
-/* Slider container */
+
 .slider-container {
   position: relative;
   height: 100%;
 
 }
 
-/* dots carrusel */
 .dots-container {
   display: flex;
   justify-content: center;
@@ -100,7 +43,7 @@ ul,
   text-align: center;
 }
 
-/* Arrows */
+
 .leftArrow {
   position: absolute;
   top: 50%;
