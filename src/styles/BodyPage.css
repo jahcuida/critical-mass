@@ -18,3 +18,6 @@
   display: flex;
   justify-content: space-between;
 }
+p{
+  text-align: left;
+}
