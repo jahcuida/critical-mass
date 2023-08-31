@@ -2,13 +2,16 @@
 import "./styles/App.css";
 import Header from "./Header";
 import BodyPage from "./BodyPage";
-import Footer from "./Footer";
 import Slider from "./Slider";
+import Navbar from "./Navbar";
 
 function App() {
   return (
     <>
       <Header></Header>
+      <div className="grey">
+      </div>
+      <Navbar></Navbar>
       <div className="grey">
       </div>
       <Slider></Slider>
