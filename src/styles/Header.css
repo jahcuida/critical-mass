@@ -1,10 +1,7 @@
 header {
-
     width: 100%;
     display: flex;
     justify-content: space-between;
-  
-    /* bottom: 0; */
   }
   a {
     color:black;
@@ -38,9 +35,4 @@ header {
     margin-left: 4rem;
     
   } 
-
-  /* #header-logo{
-    padding-bottom:6rem ;
-    width: 19em;
-    height: 5rem;
-  } */
+ 

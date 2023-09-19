@@ -2,7 +2,9 @@
   float: left;
   margin-left: 4rem;
   padding-right: 2rem;
+  /* margin-top: 1.5rem; */
 }
+
 .list-content {
   background-color: whitesmoke;
   float: right;
