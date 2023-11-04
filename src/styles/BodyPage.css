@@ -4,6 +4,12 @@
   padding-right: 2rem;
   /* margin-top: 1.5rem; */
 }
+.imgs{
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  column-gap: 20px;
+  row-gap: 20px;
+}
 
 .list-content {
   background-color: whitesmoke;
@@ -12,14 +18,19 @@
  
   border-radius: 2rem;
   padding-right: 2rem;
-  margin-right: 13rem;
+  margin-right: 20rem;
   margin-top: 1rem;
 }
 .main {
   height: 14.4rem;
   display: flex;
   justify-content: space-between;
+  height: fit-content;
 }
 p{
   text-align: left;
+}
+.imgs>img{
+  width: 200px;
+  height: 300px;
 }

@@ -55,15 +55,24 @@ export default function BodyPage() {
               sostenible en el debate público y mejorar la seguridad de los
               ciclistas confiando en que se está más seguro cuando se está en
               grupo.<br></br>
-              Recorridos en bicicleta como Masa Crítica, con
-              cientos de participantes se llevó a cabo por primera vez en Estocolmo, Suecia en
-              la década de 1970.Pero las primeras celebraciones dentro de
-              la actual ola de la Masa Crítica tuvieron lugar en San Francisco
-              (Estados Unidos) en 1992. En un primer momento acudieron tan
-              sólo 58 personas, pero en menos de un año ya eran unos 500.
+              Recorridos en bicicleta como Masa Crítica, con cientos de
+              participantes se llevó a cabo por primera vez en Estocolmo, Suecia
+              en la década de 1970.Pero las primeras celebraciones dentro de la
+              actual ola de la Masa Crítica tuvieron lugar en San Francisco
+              (Estados Unidos) en 1992. En un primer momento acudieron tan sólo
+              58 personas, pero en menos de un año ya eran unos 500.
             </p>
           )}
-          {showQue && <p> </p>}
+          {showQue && <div className="imgs">
+            <img className="top" src="src/assets/images/suggestions/1.png"></img>
+            <img className="top" src="src/assets/images/suggestions/2.jpg"></img>
+            <img className="top" src="src/assets/images/suggestions/3.jpg"></img>
+            <img className="top" src="src/assets/images/suggestions/4.jpg"></img>
+            <img className="bot" src="src/assets/images/suggestions/5.jpg"></img>
+            <img className="bot" src="src/assets/images/suggestions/6.jpg"></img>
+            <img className="bot" src="src/assets/images/suggestions/7.jpg"></img>
+            <img className="bot" src="src/assets/images/suggestions/8.jpg"></img>
+            </div>}
           {showTal && (
             <p>
               {" "}
