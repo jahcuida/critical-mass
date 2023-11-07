@@ -1,68 +1,65 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState } from "react";
 import "./styles/Carousel.css";
 import { imagesList } from "./data/sliderData.js";
 
 export default function Slider() {
-  const listRef = useRef();
   const [index, setIndex] = useState(0);
 
-  useEffect(()=>{
-    const listNode = listRef.current;
-    const imgNode = listNode.querySelectorAll("li > img")[index]
-
-    if(imgNode){
-      imgNode.scrollIntoView({
-        behavior:"smooth",
-        left:"scrollRigth",
-      });
-    }
-  },[index])
-
-
-  function handleNextClick() {
+  function nextImage() {
     if (index < imagesList.length - 1) {
       setIndex(index + 1);
     } else {
       setIndex(0);
     }
- 
   }
-  function handlePreviousClick() {
+  function previousImage() {
     if (index == 0) {
       setIndex(imagesList.length - 1);
     } else {
       setIndex(index - 1);
     }
   }
-  function goToSlide(i){
+  function goToImage(i) {
     setIndex(i);
   }
-
+  // function interval(){
+  //   setInterval(nextImage,5000);
+  // }
   return (
     <>
       <div className="main-container">
         <div className="slider-container">
-              <div className="leftArrow" onClick={e => {e.preventDefault();handlePreviousClick()}}>&#10092;</div>
-              <div className="rightArrow" onClick={handleNextClick}>&#10093;</div>
-          <div className="container-images">
-            <ul ref={listRef}>
-              {imagesList.map((image) => {
-                return (
-                  <li key={image.id} className="list-images">
-                    <img src={image.url}></img>
-                  </li>
-                );
-              })}
-            </ul>
+          <div className="leftArrow" onClick={previousImage}>
+            &#10092;
           </div>
-          <div className="dots-container">
-            {
-              imagesList.map((_,i) =>(
-                <div key={i} className={`dot-container-item ${i === index ? "active" : ""}`} onClick={()=>goToSlide(i)}>&#9865;</div>
-              ))
-            }
+          <div className="rightArrow" onClick={nextImage}>
+            &#10093;
+          </div>
+          <div className="container-images">
+            {imagesList.map((image) => {
+              return (
+                <div
+                  className={`list-images ${
+                    image.id === index ? "actual" : ""
+                  }`}
+                >
+                  {image.id === index && <img src={image.url}></img>}
+                </div>
+              );
+            })}
           </div>
         </div>
+          <div className="dots-container">
+            {imagesList.map((_, i) => (
+              <div
+                key={i}
+                className={`dot-container-item ${i === index ? "active" : ""}`}
+                onClick={() => goToImage(i)}
+              >
+                &#9865;
+              </div>
+            ))}
+          </div>
       </div>
     </>
   );
