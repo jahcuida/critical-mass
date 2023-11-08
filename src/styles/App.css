@@ -3,6 +3,9 @@
   text-align: center;
   
 }
+body{
+    height: 100vh;
+}
 .grey{
   width: 100%;
   height: 0.5rem;
