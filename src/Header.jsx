@@ -1,4 +1,4 @@
-import massLogo from "./assets/logo.png";
+import massLogo from "./assets/logoB.jpg";
 import "./styles/Header.css";
 import { AiFillInstagram } from "react-icons/ai";
 import { BiLogoFacebookCircle } from "react-icons/bi";

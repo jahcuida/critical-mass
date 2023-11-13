@@ -30,9 +30,7 @@ header {
   .logo {
     height: 6em;
     padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
     margin-left: 4rem;
-    
+    border-radius: 50%;
   } 
  
