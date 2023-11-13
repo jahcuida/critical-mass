@@ -1,3 +1,4 @@
+import img1 from "./assets/images/1.png";
 import "./styles/BodyPage.css";
 
 export default function BodyPage() {
@@ -37,7 +38,7 @@ export default function BodyPage() {
           <div class="container">
             <div class="grid-row">
               <div class="grid-item">
-                <img src="src/assets/images/1.png" />
+                <img src={img1} />
               </div>
               <div class="grid-item">
                 <img src="src/assets/images/2.jpg" />
