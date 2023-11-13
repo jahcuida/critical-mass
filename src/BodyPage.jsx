@@ -1,4 +1,11 @@
 import img1 from "./assets/images/1.png";
+import img2 from "./assets/images/2.jpg";
+import img3 from "./assets/images/3.jpg";
+import img4 from "./assets/images/4.jpg";
+import img5 from "./assets/images/5.jpg";
+import img6 from "./assets/images/6.jpg";
+import img7 from "./assets/images/7.jpg";
+import img8 from "./assets/images/8.jpg";
 import "./styles/BodyPage.css";
 
 export default function BodyPage() {
@@ -41,25 +48,25 @@ export default function BodyPage() {
                 <img src={img1} />
               </div>
               <div class="grid-item">
-                <img src="src/assets/images/2.jpg" />
+                <img src={img2} />
               </div>
               <div class="grid-item">
-                <img src="src/assets/images/3.jpg" />
+                <img src={img3} />
               </div>
               <div class="grid-item">
-                <img src="src/assets/images/4.jpg" />
+                <img src={img4} />
               </div>
               <div class="grid-item">
-                <img src="src/assets/images/5.jpg" />
+                <img src={img5} />
               </div>
               <div class="grid-item">
-                <img src="src/assets/images/6.jpg" />
+                <img src={img6} />
               </div>
               <div class="grid-item">
-                <img src="src/assets/images/7.jpg" />
+                <img src={img7} />
               </div>
               <div class="grid-item">
-                <img src="src/assets/images/8.jpg" />
+                <img src={img8} />
               </div>
             </div>
           </div>
