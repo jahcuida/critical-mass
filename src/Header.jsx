@@ -19,14 +19,14 @@ export default function Header() {
         <div className="header-social">
           <ul>
             <li>
-              <a href="#">
+              <a href="https://www.instagram.com/masacriticagranada/" target="_blank">
                 <i>
                   <AiFillInstagram />
                 </i>
               </a>
             </li>
             <li>
-              <a href="#">
+              <a href="https://www.facebook.com/people/Masa-Cr%C3%ADtica-Granada/100094417255784/" target="_blank">
                 <i>
                   <BiLogoFacebookCircle />
                 </i>
