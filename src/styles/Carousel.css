@@ -1,29 +1,18 @@
-ul,
-.list-images {
-  list-style: none;
-  white-space: nowrap;
-}
-
-
-.list-images img {
-  margin-top: -16px;
-  width: 900px;
-  height: 500px;
-  
-}
-
 
 .main-container {
-  width: 900px;
-  height: 280px;
+  width:650px;
+  height: 350px;
   margin: 0 auto;
   margin-bottom: 2.2rem;
+  border-radius: 15px;
+  position: relative;
 }
 
 
 .slider-container {
-  position: relative;
+  width: 100%; 
   height: 100%;
+  display: flex;
 }
 
 .dots-container {
@@ -85,14 +74,19 @@ div.active {
   border-radius: 50%;
 }
 .list-images{
-  max-width: 100%;
+  height: 100%;
   opacity: 0;
   transition: all 1s linear;
 }
 
 .list-images.actual{
+  height: 100%;
   opacity: 1;
+  width: 100%;
 }
 .list-images.actual img{
+  width: 100%;
+  height: 100%;
   object-fit: cover;
+  border-radius: 15px;
 }

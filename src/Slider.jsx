@@ -35,7 +35,6 @@ export default function Slider() {
           <div className="rightArrow" onClick={nextImage}>
             &#10093;
           </div>
-          <div className="container-images">
             {imagesList.map((image) => {
               return (
                 <div
@@ -47,7 +46,6 @@ export default function Slider() {
                 </div>
               );
             })}
-          </div>
         </div>
           <div className="dots-container">
             {imagesList.map((_, i) => (
