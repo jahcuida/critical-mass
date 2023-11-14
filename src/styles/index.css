@@ -60,7 +60,6 @@ body {
   border-radius: 4rem;
 }
 
-
 li{
   list-style: none;
   margin-bottom: 1.5rem;
@@ -80,21 +79,20 @@ button {
   transition: border-color 0.25s;
 }
 button:hover {
-  border-color: #646cff;
+  border: #213547 dotted;
+  border-color: white;
 }
-button:focus,
+/* button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
-}
+} */
 
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
     background-color: #ffffff;
   }
-  a:hover {
-    color: #747bff;
-  }
+
   button {
     background-color: #f9f9f9;
   }
