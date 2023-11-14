@@ -1,21 +1,13 @@
-.list {
-  float: left;
-  margin-left: 4rem;
-  padding-right: 2rem;
-  /* margin-top: 1.5rem; */
-}
 
-p {
-
-}
-.imgs > img {
-  width: 200px;
-  height: 300px;
+.main-body{
+  display: flex;
+  justify-content: space-around;
 }
 .def {
-margin-left: 10%;
-margin-right: 10%;
-
+width: 23%;
+}
+.white{
+  color: white;
 }
 .container {
   max-width: 1200px;
