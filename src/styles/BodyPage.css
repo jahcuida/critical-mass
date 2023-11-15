@@ -1,12 +1,15 @@
-
-.main-body{
+.main-body {
   display: flex;
   justify-content: space-around;
 }
 .def {
-width: 23%;
+  width: 25%;
 }
-.white{
+.def p{
+  line-height: 1.5rem;
+}
+
+.white {
   color: white;
 }
 .container {
@@ -43,4 +46,26 @@ width: 23%;
   font-family: sans-serif;
   flex-direction: column-reverse;
   align-items: stretch;
+}
+@media only screen and (max-width: 1400px) {
+  .main-body {
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+  }
+  .def {
+    display: flex;
+
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .def p{
+    padding-right: 10%;
+    padding-left: 10%;
+    text-align: center;
+  }
+  iframe{
+    width: fit-content;
+  }
 }

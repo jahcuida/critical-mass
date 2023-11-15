@@ -19,13 +19,14 @@ export default function BodyPage() {
             ciudades del mundo. Su finalidad es introducir la movilidad
             sostenible en el debate público y mejorar la seguridad de los
             ciclistas confiando en que se está más seguro cuando se está en
-            grupo.<br></br>
+            grupo.</p>
+            <p>
             Recorridos en bicicleta como Masa Crítica, con cientos de
             participantes se llevó a cabo por primera vez en Estocolmo, Suecia
             en la década de 1970.Pero las primeras celebraciones dentro de la
             actual ola de la Masa Crítica tuvieron lugar en San Francisco
             (Estados Unidos) en 1992. En un primer momento acudieron tan sólo 58
-            personas, pero en menos de un año ya eran unos 500.<br></br>
+            personas, pero en menos de un año ya eran unos 500.
           </p>
         </div>
         <div className="map">
@@ -33,8 +34,8 @@ export default function BodyPage() {
           <p>El primer viernes de cada mes en los jardines del triunfo, a las 20:00h</p>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1589.3429796925832!2d-3.6032152612544968!3d37.18393349303506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fce9f8d635e5%3A0xb97d58a5b13dec87!2sJardines%20del%20Triunfo!5e0!3m2!1ses!2ses!4v1699902089191!5m2!1ses!2ses"
-            width="400"
-            height="300"
+            width="550"
+            height="250"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>

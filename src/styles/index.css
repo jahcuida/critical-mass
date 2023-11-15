@@ -3,8 +3,8 @@
 :root {
   font-family: 'Oswald', sans-serif;
   font-family: 'Tektur', sans-serif;
-  /* line-height: 1.5;
-  font-weight: 400; */
+  /* line-height: 2rem; */
+  font-weight: 400;
 
   color-scheme: light dark;
   color: black;
@@ -69,6 +69,7 @@ li{
 }
 ul{
   margin-top: 2rem;
+  padding-inline-start: unset;
 }
 button {
   border-radius: 8px;
@@ -85,10 +86,7 @@ button:hover {
   border: #213547 dotted;
   border-color: white;
 }
-/* button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -117,11 +115,16 @@ button:focus-visible {
   }
 
   .logo {
-    margin-right: 4rem;
+    margin: 0 auto;
+    
   }
 
   h1 {
-    margin-left: 3rem;
-    margin-right: 3rem;
+    font-size: xx-large;
+    margin: 0 auto;
+  }
+  ul{
+    margin-left: 1rem;
+    padding-inline-start: unset;
   }
 }
