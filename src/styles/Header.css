@@ -2,6 +2,7 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   a {
     color:black;
@@ -20,9 +21,6 @@ header {
   .header-social ul li{
     display: inline;
     margin-right: 1rem;
-  }
-  .header-social{
-    margin-top: 0.5rem;
   }
   .header-mail div{
     margin-top:2rem;

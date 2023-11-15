@@ -22,9 +22,6 @@ export default function Slider() {
   function goToImage(i) {
     setIndex(i);
   }
-  // function interval(){
-  //   setInterval(nextImage,5000);
-  // }
   return (
     <>
       <div className="main-container">
@@ -47,6 +44,7 @@ export default function Slider() {
               );
             })}
         </div>
+      </div>
           <div className="dots-container">
             {imagesList.map((_, i) => (
               <div
@@ -58,7 +56,6 @@ export default function Slider() {
               </div>
             ))}
           </div>
-      </div>
     </>
   );
 }
