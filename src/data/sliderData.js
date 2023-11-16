@@ -1,4 +1,6 @@
 import cartel from "../assets/images/fondoWebDIC.jpg"
+import cartel2 from "../assets/images/fondoWebDIC2.jpg"
+import cartel3 from "../assets/images/fondoWebDIC3.jpg"
 export const imagesList = [
   {
     id:0,
@@ -7,12 +9,12 @@ export const imagesList = [
   },
   {
     id:1,
-    url: "https://i.ytimg.com/vi/2P-xxEEZprA/maxresdefault.jpg",
+    url: cartel2,
     alt: "activismo sobre ruedas",
   },
   {
     id:2,
-    url: "https://ciclosfera.com/img/514be8862fc150f0dd48999b9ac88676.1200.0.0.0.49d0bf47.jpg",
+    url: cartel3,
     alt: "por los caídos",
   },
 ];
