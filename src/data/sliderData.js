@@ -1,4 +1,4 @@
-import cartel from "../assets/images/fondoWebDIC.jpg"
+import cartel from "../assets/images/fondoWeb.jpg"
 import cartel2 from "../assets/images/fondoWebDIC2.jpg"
 import cartel3 from "../assets/images/fondoWebDIC3.jpg"
 export const imagesList = [
