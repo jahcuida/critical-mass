@@ -1,25 +1,21 @@
-
 import "./styles/App.css";
 import Header from "./Header";
-import BodyPage from "./BodyPage";
 import Slider from "./Slider";
-// import Navbar from "./Navbar";
+import BodyPage from "./BodyPage";
 
 function App() {
   return (
     <>
-      <Header></Header>
-      <div className="grey">
-      </div>
-      {/* <Navbar></Navbar> */}
-      {/* <div className="grey"> */}
-      {/* </div> */}
-      <Slider></Slider>
-      <div className="grey">
-      </div>
-      <BodyPage/>
-      <div className="grey">
-      </div>
+      <Header />
+      <div className="grey"></div>
+
+      <Slider />
+      <div className="grey"></div>
+
+      <BodyPage />
+      <div className="grey"></div>
+
+    
     </>
   );
 }

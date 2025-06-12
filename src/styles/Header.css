@@ -1,34 +1,85 @@
 header {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  a {
-    color:black;
-    text-decoration: none;
-    cursor: pointer;
-  }
-  i{
-    font-size: 2.5rem;
-  }
-  h1 {
-    font-size: 3.2em;
-    line-height: 1.1;
-    margin-top: 2.5rem;
-    
-  }
-  .header-social ul li{
-    display: inline;
-    margin-right: 1rem;
-  }
-  .header-mail div{
-    margin-top:2rem;
-  }
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    margin-left: 4rem;
-    border-radius: 50%;
-  } 
- 
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  margin-left: 4rem;
+  border-radius: 50%;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+  margin-top: 2.5rem;
+}
+
+.header-social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-social ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header-social ul li {
+  display: flex;
+  align-items: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  padding: 0 8px;
+}
+
+i {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 2.5rem;
+}
+
+.lang-button {
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  padding: 6px 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  height: 2.5rem;
+  z-index: 999;
+}
+
+
+
+.lang-button:hover {
+  border: none;
+}

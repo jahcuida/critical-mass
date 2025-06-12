@@ -8,7 +8,7 @@
 
   color-scheme: light dark;
   color: black;
-  background-color: whitesmoke;
+  background-color: #FDFDFD;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -26,6 +26,7 @@ header {
 html, body {
   height: 100%;
   margin: 0;
+  
   /* overflow-y: scroll; */
 }
 /* a {
@@ -47,7 +48,7 @@ body {
   background-size: cover;
   background-position: center; */
   margin: 0;
-  background-color: whitesmoke;
+  background-color: #FDFDFD;
   overflow: initial;
 }
 
