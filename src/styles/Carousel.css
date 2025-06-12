@@ -1,16 +1,28 @@
 
+
 .main-container {
   display: flex;
   margin: 0 auto;
   border-radius: 15px;
   position: relative;
+  background-image: url('https://i.postimg.cc/tg6c3rBW/trama2.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 0;
+  
 }
 
 
 .slider-container {
-  width: 100%; 
+  width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  
+  
 }
 
 .dots-container {
@@ -28,6 +40,7 @@
 .leftArrow {
   left: 32px;
 }
+
 .rightArrow {
   right: 32px;
 }
@@ -40,7 +53,7 @@
   transform: translate(0, -50%);
   font-size: 50px;
   font-weight: 700;
-  color: #fff;
+  color: black;
   z-index: 1;
   cursor: pointer;
   transition: .5s ease;
@@ -49,8 +62,9 @@
   align-items: center;
   border-radius: 10px;
 }
-.rightArrow:hover,.leftArrow:hover{
-  background-color: black;
+
+.rightArrow:hover,
+.leftArrow:hover {
   opacity: 0.7;
   transition: all 2s ease-in-out;
 }
@@ -63,6 +77,10 @@
   overflow: hidden;
   display: flex;
   flex-direction: row;
+   position: relative;
+  z-index: 1;
+  background: transparent; /* para que no oculte la trama */
+  
 }
 
 div.active {
@@ -71,31 +89,41 @@ div.active {
   height: 15px;
   border-radius: 50%;
 }
-.list-images{
+
+.list-images {
   height: 100%;
   opacity: 0;
   transition: all 1s linear;
 }
 
-.list-images.actual{
-  height: 100%;
+.list-images.actual {
+  height: 70%;
   opacity: 1;
-  width: 100%;
+  width: 65%;
+ 
 }
-.list-images.actual img{
+
+.list-images.actual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  border-radius: 15px;
 }
-@media only screen and (max-width: 798px){
-  .main-container{
+
+@media only screen and (max-width: 798px) {
+  .main-container {
     display: flex;
     justify-content: center;
     /* width: fit-content; */
   }
-  .list-images.actual img{
-    object-fit: cover;
-    border-radius: 15px;
+
+  .list-images.actual {
+  height: 100%;
+  opacity: 1;
+  width: 100%;
 }
+
+
+  .list-images.actual img {
+    object-fit: cover;
+  }
 }
