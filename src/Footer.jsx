@@ -1,40 +1,35 @@
-import massLogo from "./assets/logo-masa-critica-preview.png";
 import "./styles/Footer.css";
-import { AiFillInstagram } from "react-icons/ai";
-import { BiLogoFacebookCircle } from "react-icons/bi";
 import { AiTwotoneMail } from "react-icons/ai";
+import { useLanguage } from "./context/LanguageContext"; // o donde tengas el contexto
 
 export default function Footer() {
+  const { t } = useLanguage();
+
   return (
-    <>
-      <div className="footer">
-        <div id="footer-logo">
-          <img src={massLogo} className="logo" alt="Critical mass logo" />
+    <div className="footer">
+      <div id="footer-logo">
+        <img
+          src="https://i.postimg.cc/VNmBdD0K/logoA.png"
+          className="logo"
+          alt="Critical mass logo"
+        />
+      </div>
+      <div className="footer-text">
+        <div className="footer-info">
+          <p>{t("footerEvent")}</p>
         </div>
-        <div className="footer-mail">
-          <div>
-            <AiTwotoneMail />
-          </div>
-          <a href="mailto:mglprzprz@gmail.com">mglprzprz@gmail.com</a>
-        </div>
-        <div className="social">
-          <ul>
-            <li>
-              <a href="#">
-                <AiFillInstagram />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <BiLogoFacebookCircle />
-              </a>
-            </li>
-            <li>
-              <a></a>
-            </li>
-          </ul>
+
+        <div className="footer-copy">
+          <p>{t("footerCopyright")}</p>
         </div>
       </div>
-    </>
+      <div className="footer-mail">
+        <div>
+          <AiTwotoneMail />
+        </div>
+        <a href="mailto:mglprzprz@gmail.com">mglprzprz@gmail.com</a>
+        <a href="mailto:atienzajobs16@gmail.com">atienzajobs16@gmail.com</a>
+      </div>
+    </div>
   );
 }

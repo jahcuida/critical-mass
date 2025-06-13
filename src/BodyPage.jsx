@@ -25,7 +25,7 @@ export default function BodyPage() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-        <div>
+        <div className="masaApp">
           <h2>{t("appTitle")}</h2>
           <p>{t("appText")}</p>
           <img src="https://i.postimg.cc/SstDr2vM/app.png" className="app" alt="app" />

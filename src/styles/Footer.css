@@ -1,25 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .footer {
   width: 100%;
+  max-width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  background-image: url("https://i.postimg.cc/3NcnGmQd/footermasa.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 3rem 2rem;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  min-height: 180px;
+  position: relative; /* añadido para overlay */
+  z-index: 0;          /* añadido para overlay */
 }
+
+#footer-logo img {
+  width: 150px;
+  /* logo más grande */
+  height: auto;
+}
+
+.footer-mail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.footer-copy,
+.footer-info {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.footer-mail div {
+  display: flex;
+  align-items: center;
+  color: white;
+
+  font-size: 1.5rem;
+}
+
+.footer-mail a {
+  color: white;
+
+  margin: 0.3rem 0;
+  text-decoration: none;
+  display: block;
+  text-align: right;
+}
+
 a {
-  color:black;
   text-decoration: none;
   cursor: pointer;
 }
-#footer-content {
-  width: 100%;
-  place-content: center;
-  justify-content: center;
-  border-radius: 4rem;
+
+/* Overlay oscuro para la imagen de fondo */
+.footer::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.35);
+  z-index: -1;
+  border-radius: inherit;
 }
 
-.footer-social ul li{
-  display: inline;
-  margin-right: 1rem;
-}
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: auto;
+    padding: 2rem 1rem;
+  }
 
-.footer-mail div{
-  margin-top:2rem;
+  .footer-mail {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+
+  .footer-mail div {
+    font-size: 2rem;
+  }
+
+  #footer-logo {
+    margin-bottom: 1rem;
+  }
 }
