@@ -28,7 +28,7 @@ export default function BodyPage() {
         <div className="masaApp">
           <h2>{t("appTitle")}</h2>
           <p>{t("appText")}</p>
-          <img src="https://i.postimg.cc/SstDr2vM/app.png" className="app" alt="app" />
+          <img src="https://i.postimg.cc/pTdZ9KJj/app.png" className="app" alt="app" />
           <button>
             <a href="https://www.criticalmaps.net/" target="_blank" className="white">
               {t("clickHere")}
