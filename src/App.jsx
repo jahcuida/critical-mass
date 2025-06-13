@@ -2,6 +2,7 @@ import "./styles/App.css";
 import Header from "./Header";
 import Slider from "./Slider";
 import BodyPage from "./BodyPage";
+import Footer from "./Footer";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
 
       <BodyPage />
       <div className="grey"></div>
+
+      <Footer />
 
     
     </>

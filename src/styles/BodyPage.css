@@ -18,6 +18,8 @@
 .container {
   max-width: 1200px;
   margin: auto;
+  margin-bottom: 4rem;
+
 }
 
 .grid-row {
@@ -38,36 +40,50 @@
   margin-bottom: 0;
 }
 
-.grid-row .grid-item:hover {
-  filter: contrast(0.7);
+.grid-row .grid-item img {
+  border-radius: 1rem;
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.grid-row .grid-item:hover img {
+  transform: scale(1.05);
 }
 
 .grid-row .grid-item {
   transition: filter 0.5s ease;
   display: flex;
   cursor: pointer;
-  background: var(--light);
-  box-shadow: var(--shadow);
-  color: var(--dark);
   text-align: center;
   font-family: sans-serif;
   flex-direction: column-reverse;
   align-items: stretch;
 }
 
+
+
 .app {
-  width: 20rem;    /* Aproximadamente 96px si 1rem = 16px */
+  width: 20rem;
+  /* Aproximadamente 96px si 1rem = 16px */
   height: auto;
   display: block;
-  margin: 1rem auto; /* centrado vertical con separación */
+  margin: 1rem auto;
+  /* centrado vertical con separación */
 }
 
+.map iframe {
+  border-radius: 12px;
+}
 
 @media only screen and (max-width: 1400px) {
   .main-body {
     flex-direction: column;
     justify-content: center;
     margin: auto;
+  }
+
+  .container {
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .def {
@@ -86,5 +102,9 @@
 
   iframe {
     width: fit-content;
+  }
+
+  .masaApp {
+    margin-bottom: 1rem;
   }
 }

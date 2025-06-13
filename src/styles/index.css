@@ -15,6 +15,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  
 }
 /* *{
   box-sizing: border-box;
@@ -81,10 +82,11 @@ button {
   font-family: inherit;
   background-color: #333333;
   cursor: pointer;
-  transition: border-color 0.25s;
+  transition: transform 0.25s ease, border-color 0.25s;
 }
+
 button:hover {
-  border: #213547 dotted;
+  transform: scale(1.1); 
   border-color: white;
 }
 
