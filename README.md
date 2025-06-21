@@ -1,6 +1,6 @@
-<div style="text-align: center;">
+<p align="center">
   <img src="https://i.postimg.cc/MKtbbjfK/logoB.png" alt="Critical Mass Granada Logo" width="400"/>
-</div>
+</p>
 
 # Critical Mass Granada
 
