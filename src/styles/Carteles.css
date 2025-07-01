@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Tektur&display=swap');
+
+.carteles-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+
+  color: white;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.carteles-container h2 {
+  margin-bottom: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Tektur', sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background: #fff;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  display: block;
+  border-radius: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 90%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  opacity: 0;
+  transition: opacity 0.3s ease, width 0.3s ease, height 0.3s ease;
+  border-radius: 16px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.card:hover .overlay,
+.overlay.show {
+  opacity: 1;
+  pointer-events: auto;
+  width: 95%;    /* aumenta un poco el ancho */
+  height: 95%;   /* aumenta un poco la altura */
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 767px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
