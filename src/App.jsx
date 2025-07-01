@@ -2,6 +2,7 @@ import "./styles/App.css";
 import Header from "./Header";
 import Slider from "./Slider";
 import BodyPage from "./BodyPage";
+import Carteles from "./Carteles";
 import Footer from "./Footer";
 
 function App() {
@@ -16,9 +17,10 @@ function App() {
       <BodyPage />
       <div className="grey"></div>
 
-      <Footer />
+      <Carteles />
+      <div className="grey"></div>
 
-    
+      <Footer />
     </>
   );
 }
