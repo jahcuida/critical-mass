@@ -3,6 +3,7 @@ import Header from "./Header";
 import Slider from "./Slider";
 import BodyPage from "./BodyPage";
 import Carteles from "./Carteles";
+import Galeria from "./Galeria"; 
 import Footer from "./Footer";
 
 function App() {
@@ -16,9 +17,11 @@ function App() {
 
       <BodyPage />
       <div className="grey"></div>
-
+ <Galeria />  
+      <div className="grey"></div>
       <Carteles />
       <div className="grey"></div>
+      
 
       <Footer />
     </>
