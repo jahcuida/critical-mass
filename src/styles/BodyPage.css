@@ -19,7 +19,7 @@
 .container {
   max-width: 1200px;
   margin: auto;
-  margin-bottom: 4rem;
+  padding-bottom: 4rem;
 
 }
 
@@ -108,4 +108,66 @@
   .masaApp {
     margin-bottom: 1rem;
   }
+}
+
+.carteles-container {
+  background-color: white;
+  color: black;
+  padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.carteles-container.dark {
+  background-color: #121212;
+  color: white;
+}
+
+/* Mantener los estilos previos para la cuadrícula y las tarjetas */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  position: relative;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 8px;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 0 0 6px 6px;
+}
+
+.overlay.show {
+  opacity: 1;
+}
+
+/* En modo oscuro queremos texto blanco, pero la superposición ya es negra semitransparente, así que OK */
+
+.carteles-container.dark .overlay {
+ background-color: black;
+  color: white;
+}
+
+/* Si quieres que el texto del overlay se vea más brillante en modo oscuro */
+
+.carteles-container.dark .overlay.show {
+  background: rgba(255, 255, 255, 0.25);
 }

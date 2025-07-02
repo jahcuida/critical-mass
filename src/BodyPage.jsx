@@ -1,14 +1,14 @@
 import "./styles/BodyPage.css";
 import { useLanguage } from "./context/LanguageContext";
 
-export default function BodyPage() {
+export default function BodyPage({ darkMode }) {
   const { t } = useLanguage();
 
   const imageUrls = t("tipsImages");
 
   return (
     <>
-      <div className="main-body">
+      <div className={`main-body ${darkMode ? "dark" : ""}`}>
         <div className="def">
           <h2>{t("movementTitle")}</h2>
           <p>{t("movementParagraph1")}</p>
@@ -23,30 +23,43 @@ export default function BodyPage() {
             height="250"
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
+            title="Mapa Jardines del Triunfo"
           ></iframe>
         </div>
         <div className="masaApp">
           <h2>{t("appTitle")}</h2>
           <p>{t("appText")}</p>
-          <img src="https://i.postimg.cc/pTdZ9KJj/app.png" className="app" alt="app" />
+          <img
+            src="https://i.postimg.cc/pTdZ9KJj/app.png"
+            className="app"
+            alt="app"
+          />
           <button>
-            <a href="https://www.criticalmaps.net/" target="_blank" className="white">
+            <a
+              href="https://www.criticalmaps.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="white"
+            >
               {t("clickHere")}
             </a>
           </button>
         </div>
       </div>
 
-      <div className="grey"></div>
-      <h2>{t("tipsTitle")}</h2>
-      <div className="section">
+      <div className={`grey ${darkMode ? "dark" : ""}`}></div>
+
+      <h2 className={darkMode ? "dark" : ""}>{t("tipsTitle")}</h2>
+
+      <div className={`section ${darkMode ? "dark" : ""}`}>
         <div className="container">
           <div className="grid-row">
-            {Array.isArray(imageUrls) && imageUrls.map((url, index) => (
-              <div className="grid-item" key={index}>
-                <img src={url} alt={`Imagen ${index + 1}`} />
-              </div>
-            ))}
+            {Array.isArray(imageUrls) &&
+              imageUrls.map((url, index) => (
+                <div className="grid-item" key={index}>
+                  <img src={url} alt={`Imagen ${index + 1}`} />
+                </div>
+              ))}
           </div>
         </div>
       </div>

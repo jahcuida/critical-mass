@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./styles/Carousel.css";
 import { useLanguage } from "./context/LanguageContext";
 
-export default function Slider() {
+export default function Slider({ darkMode }) {
   const [index, setIndex] = useState(0);
   const { t } = useLanguage();
 
@@ -26,7 +26,7 @@ export default function Slider() {
 
   return (
     <>
-      <div className="main-container">
+  <div className={`main-container ${darkMode ? "dark" : ""}`}>
         <div className="slider-container">
           <div className="leftArrow" onClick={previousImage}>
             &#10092;
@@ -45,8 +45,10 @@ export default function Slider() {
           ))}
         </div>
       </div>
-      <div className="grey"></div>
-      <div className="dots-container">
+     <div className={`grey ${darkMode ? "dark" : ""}`}></div>
+
+      {/* Cambiamos la clase según darkMode */}
+      <div className={`dots-container ${darkMode ? "dark" : ""}`}>
         {sliderImages.map((_, i) => (
           <div
             key={i}
