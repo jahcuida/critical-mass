@@ -1,6 +1,7 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay } from "swiper/modules";
+import { useLanguage } from "./context/LanguageContext"; // ajusta ruta si es necesario
 import "swiper/css";
 import "swiper/css/navigation";
 import "./styles/Galeria.css";
@@ -74,50 +75,45 @@ const images = [
   "https://i.postimg.cc/CKGbc7KF/MASAcrit_jun2025_20.jpg",
   "https://i.postimg.cc/Qxv5sw98/MASAcrit_jun2025_26.jpg",
 ];
-const InstagramIcon = () => (
+
+const InstagramIcon = ({ darkMode }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    fill="black"
+    fill={darkMode ? "white" : "black"}
     viewBox="0 0 24 24"
     width="24px"
     height="24px"
     style={{ marginRight: "8px" }}
   >
-    <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zM12 7.25a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/>
+    <path d="M7.75 2A5.75 5.75 0 0 0 2 7.75v8.5A5.75 5.75 0 0 0 7.75 22h8.5A5.75 5.75 0 0 0 22 16.25v-8.5A5.75 5.75 0 0 0 16.25 2h-8.5zM12 7.25a4.75 4.75 0 1 1 0 9.5 4.75 4.75 0 0 1 0-9.5zm5.75-.75a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 9.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z" />
   </svg>
 );
 
-export default function Carrusel() {
+export default function Galeria({ darkMode }) {
+  const { t } = useLanguage();
+
   return (
-    <div style={{ width: "100%", height: "100vh", overflow: "hidden" }}>
+    <div
+      className={`galeria-container ${darkMode ? "dark" : ""}`}
+      style={{ width: "100%", height: "100vh", overflow: "hidden" }}
+    >
       <h1
+        className="galeria-title"
         style={{
-          textAlign: "center",
-          margin: "20px 0 8px",
           fontFamily: "'Tektur', sans-serif",
         }}
       >
-        Galería
+        {t("galleryTitle")}
       </h1>
-      <p
-        style={{
-          textAlign: "center",
-          marginBottom: "20px",
-          fontSize: "1rem",
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-          gap: "4px",
-          cursor: "pointer",
-        }}
-      >
+      <p className="galeria-instagram-link">
         <a
           href="https://www.instagram.com/lachica_dela_camara/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ display: "flex", alignItems: "center", color: "black", textDecoration: "none" }}
+          style={{ display: "flex", alignItems: "center" }}
+          className={darkMode ? "dark-link" : ""}
         >
-          <InstagramIcon />
+          <InstagramIcon darkMode={darkMode} />
           la chica de la cámara
         </a>
       </p>

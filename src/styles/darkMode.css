@@ -1,0 +1,200 @@
+/* Botones fijos arriba a la derecha */
+.fixed-buttons {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
+
+/* Estilos base para los botones de idioma y modo oscuro */
+.lang-button,
+.darkmode-button {
+  background: black;
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Hover en modo claro */
+.lang-button:hover,
+.darkmode-button:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.lang-button:hover svg,
+.darkmode-button:hover svg {
+  color: black;
+  fill: black;
+}
+
+/* Modo oscuro general */
+body.dark-mode {
+  background-color: #121212;
+  color: #eee;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Botones en modo oscuro */
+body.dark-mode .lang-button,
+body.dark-mode .darkmode-button {
+  color: white;
+  border-color: white;
+}
+
+/* Hover en modo oscuro */
+body.dark-mode .lang-button:hover,
+body.dark-mode .darkmode-button:hover {
+  color: black;
+  background-color: #ccc;
+}
+
+body.dark-mode .lang-button:hover svg,
+body.dark-mode .darkmode-button:hover svg {
+  color: black;
+  fill: black;
+}
+
+/* Iconos sociales modo claro */
+.header-social ul li a i {
+  color: black;
+  transition: color 0.3s ease;
+}
+
+/* Iconos sociales modo oscuro */
+body.dark-mode .header-social ul li a i {
+  color: white;
+}
+
+
+
+/* Modo oscuro */
+.main-container.dark {
+  background-image: none;
+  background-color: black;
+}
+
+/* Flechas en modo oscuro */
+body.dark-mode .rightArrow,
+body.dark-mode .leftArrow {
+  color: white;
+}
+
+.main-body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+/* Si quieres que los links o botones cambien: */
+.main-body.dark a {
+  color: #bbb;
+}
+
+.main-body.dark button a.white {
+  color: white;
+}
+/* Estilos por defecto del botón y enlace */
+.masaApp button {
+  background-color: black;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.masaApp button a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* En modo oscuro (cuando .main-body tiene la clase dark) */
+.main-body.dark .masaApp button {
+  background-color: white; /* fondo negro */
+  border: 1px solid white;
+}
+
+.main-body.dark .masaApp button a {
+  color: black; /* texto blanco */
+}
+
+
+/* Sección base */
+.section {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Modo oscuro */
+.section.dark {
+  background-color: black;
+  color: white;
+}
+
+/* Si quieres que los h2 también cambien */
+h2.dark {
+  color: white;
+  background-color: black;
+  margin: 0;
+  padding: 1rem;
+}
+
+.galeria-container {
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.galeria-container.dark {
+  background-color: #121212;
+  color: white;
+}
+
+.galeria-title {
+  text-align: center;
+  margin: 20px 0 8px;
+}
+
+.galeria-instagram-link {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.galeria-instagram-link a {
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.galeria-instagram-link a.dark-link {
+  color: white;
+}
+
+/* Opcional: cambiar color flechas swiper en modo oscuro */
+.galeria-container.dark .swiper-button-next,
+.galeria-container.dark .swiper-button-prev {
+  color: white;
+}
+
+#root.dark-mode {
+  background-color: #121212;
+  color: white;
+  min-height: 100vh;
+}

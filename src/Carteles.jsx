@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useLanguage } from "./context/LanguageContext";
 import "./styles/Carteles.css";
 
-export default function Carteles() {
+export default function Carteles({ darkMode }) {
   const { t } = useLanguage();
 
   const [activeIndex, setActiveIndex] = useState(null);
@@ -113,10 +113,9 @@ export default function Carteles() {
       subtext: "1/12/2023",
     },
   ];
-
-  return (
-    <div className="carteles-container">
-      <h2>{t("cartelesTitle")}</h2>
+return (
+    <div className={`carteles-container ${darkMode ? "dark" : ""}`}>
+      <h2 className={darkMode ? "dark" : ""}>{t("cartelesTitle")}</h2>
       <div className="grid">
         {eventos.map((evento, index) => (
           <div key={index} className="card" onClick={() => toggleActive(index)}>
